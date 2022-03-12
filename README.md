@@ -14,13 +14,13 @@
 
 下面介绍本仓库的 workflow 供参考。
 
-首先，clone 本仓库并新建一个 branch，命名为 `<source>/[<id>-]<name>`。若结果超过了 255 个字符，则进行缩减。如：
+首先，clone 本仓库并新建一个 branch，命名为 `<source>/<文字 ID>`。若结果超过了 255 个字符，则进行缩减。如：
 
 - <https://www.minecraft.net/zh-hans/article/minecraft-java-edition-1-18-2> 对应 `minecraft-net/minecraft-java-edition-1-18-2`
 - <https://help.minecraft.net/hc/en-us/articles/4415922646541--Minecraft-no-longer-available-for-non-Amazon-devices-in-the-Amazon-store-> 对应 `help/4415922646541--Minecraft-no-longer-available-for-non-Amazon-devices-in-the-Amazon-store-`
 - <https://feedback.minecraft.net/hc/en-us/articles/4675499616013-Minecraft-Beta-Preview-1-18-30-22-23> 对应 `feedback/4675499616013-Minecraft-Beta-Preview-1-18-30-22-23`
 
-其次，用 VSCode 在对应目录下创建 `0000-[<id>-]<name>.bbcode` 文件，并将经 SPXX 转换过的 BBCode 贴入。在文章最前面，你需要加上一段用 YAML 表示的 metadata。格式如下：
+其次，用 VSCode 在对应目录下创建 `0000-<文字 ID>.bbcode` 文件，并将经 SPXX 转换过的 BBCode 贴入。在文章最前面，你需要加上一段用 YAML 表示的 metadata。格式如下：
 
 ```yaml
 ---
@@ -60,6 +60,6 @@ mcbbs:
 
 ### 更新翻译
 
-你可以随时通过 Pull Request 更新翻译。注意 branch 名称应为 `<username>-patch-<id>-<date>`。如 `Dianliang233-patch-0001-2022-03-12`。
+你可以随时通过 Pull Request 更新翻译。注意 branch 名称应为 `<用户名>-patch-<文章 ID>-<日期>`。如 `Dianliang233-patch-0001-2022-03-12`。
 
 SPX Fellow 将会尽力联系原作者，将你的 patch 更新至 MCBBS 并申请给你加分。若联系失败，我们允许你另行发布翻译。
